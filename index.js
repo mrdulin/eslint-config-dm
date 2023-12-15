@@ -35,12 +35,14 @@ module.exports = {
   },
   overrides: [
     {
-      files: ['**/*.ts', '**/*.tsx'],
       parser: '@typescript-eslint/parser',
       settings: {
         react: {
           version: 'detect',
         },
+      },
+      parserOptions: {
+        sourceType: 'module',
       },
       env: {
         browser: true,
