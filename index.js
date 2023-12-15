@@ -42,10 +42,6 @@ module.exports = {
           version: 'detect',
         },
       },
-      parserOptions: {
-        sourceType: 'module',
-        project: true,
-      },
       env: {
         browser: true,
       },
