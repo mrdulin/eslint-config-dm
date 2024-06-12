@@ -3,7 +3,9 @@
   "version": "1.0.1",
   "description": "ESlint Rule for Front-End Development",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "postversion": "tag=$(git tag --points-at HEAD) && git push origin $tag"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mrdulin/eslint-config-dm.git"
