@@ -1,8 +1,12 @@
 {
-  "name": "eslint-config-dm",
+  "name": "@d-matrix/eslint-config",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "files": [
+    "index.js",
+    "react.js",
+    "typescript.js"
+  ],
   "scripts": {},
   "repository": {
     "type": "git",
@@ -19,19 +23,20 @@
   },
   "homepage": "https://github.com/mrdulin/eslint-config-dm#readme",
   "dependencies": {
+    "@typescript-eslint/eslint-plugin": "5.3.0",
+    "@typescript-eslint/eslint-plugin-tslint": "5.3.0",
+    "@typescript-eslint/parser": "5.3.0",
     "eslint-config-prettier": "8.3.0",
     "eslint-plugin-import": "2.25.2",
     "eslint-plugin-jsdoc": "37.0.3",
-    "eslint-plugin-jsx-a11y": "6.4.1",
+    "eslint-plugin-jsx-a11y": "^6.8.0",
     "eslint-plugin-prefer-arrow": "1.2.3",
     "eslint-plugin-prettier": "4.0.0",
-    "eslint-plugin-react": "7.26.1",
-    "eslint-plugin-react-hooks": "4.2.1-beta-c1220ebdd-20211123",
-    "@typescript-eslint/eslint-plugin": "5.3.0",
-    "@typescript-eslint/eslint-plugin-tslint": "5.3.0",
-    "@typescript-eslint/parser": "5.3.0"
+    "eslint-plugin-react": "^7.34.2",
+    "eslint-plugin-react-hooks": "4.2.1-beta-c1220ebdd-20211123"
   },
   "peerDependencies": {
-    "eslint": ">=8.3.0"
+    "eslint": ">=8.3.0",
+    "typescript": "4.3.2"
   }
 }

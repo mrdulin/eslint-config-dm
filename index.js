@@ -1,6 +1,7 @@
 module.exports = {
   root: true,
   env: {
+    browser: true,
     node: true,
     es6: true,
   },
@@ -35,6 +36,7 @@ module.exports = {
   },
   overrides: [
     {
+      files: ['**/*.ts', '**/*.tsx'],
       parser: '@typescript-eslint/parser',
       settings: {
         react: {
@@ -43,6 +45,7 @@ module.exports = {
       },
       parserOptions: {
         sourceType: 'module',
+        project: './tsconfig.json',
       },
       env: {
         browser: true,
