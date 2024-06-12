@@ -1,7 +1,7 @@
 {
   "name": "@d-matrix/eslint-config",
   "version": "1.0.0",
-  "description": "",
+  "description": "ESlint Rule for Front-End Development",
   "files": [
     "index.js",
     "react.js",
