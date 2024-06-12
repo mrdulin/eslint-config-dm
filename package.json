@@ -34,5 +34,10 @@
   "peerDependencies": {
     "eslint": ">=8.3.0",
     "typescript": "4.3.2"
-  }
+  },
+  "devDependencies": {
+    "@d-matrix/prettier-config": "^1.0.0",
+    "prettier": "^3.3.2"
+  },
+  "prettier": "@d-matrix/prettier-config"
 }
