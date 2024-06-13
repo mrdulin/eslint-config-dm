@@ -4,7 +4,7 @@
   "description": "ESlint Rule for Front-End Development",
   "main": "index.js",
   "scripts": {
-    "postversion": "git push --tags"
+    "postversion": "git push && git push --tags"
   },
   "repository": {
     "type": "git",
