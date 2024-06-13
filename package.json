@@ -4,7 +4,7 @@
   "description": "ESlint Rule for Front-End Development",
   "main": "index.js",
   "scripts": {
-    "postversion": "tag=$(git tag --points-at HEAD) && git push origin $tag"
+    "postversion": "git push --tags"
   },
   "repository": {
     "type": "git",
