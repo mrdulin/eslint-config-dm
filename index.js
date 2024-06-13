@@ -27,17 +27,16 @@ module.exports = {
     "import/order": [
       "error",
       {
-        groups: ["builtin", "external", "internal", "parent", "sibling", "index", "unknown"],
+        groups: ["builtin", "external", "internal", "parent", "sibling", "index", "object", "type"],
         pathGroups: [
           {
             pattern: "react*",
             group: "builtin",
-            position: "before",
+            position: "after",
           },
           {
-            pattern: "@*",
-            group: "external",
-            position: "before",
+            pattern: "@/**",
+            group: "internal",
           },
         ],
         pathGroupsExcludedImportTypes: [],
@@ -93,10 +92,7 @@ module.exports = {
   settings: {
     "import/resolver": {
       alias: {
-        map: [
-          ["@", "./src"],
-          // ["@/components", "./src/components"],
-        ],
+        map: [["@", "./src"]],
         extensions: [".ts", ".js", ".jsx", ".tsx", ".json", ".d.ts"],
       },
     },

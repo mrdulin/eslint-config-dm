@@ -4,7 +4,8 @@
   "description": "ESlint Rule for Front-End Development",
   "main": "index.js",
   "scripts": {
-    "postversion": "git push && git push --tags"
+    "postversion": "git push && git push --tags",
+    "cnpm:sync": "cnpm sync @d-matrix/eslint-config"
   },
   "repository": {
     "type": "git",
