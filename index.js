@@ -27,10 +27,26 @@ module.exports = {
     "import/order": [
       "error",
       {
+        groups: ["builtin", "external", "internal", "parent", "sibling", "index", "unknown"],
+        pathGroups: [
+          {
+            pattern: "react*",
+            group: "builtin",
+            position: "before",
+          },
+          {
+            pattern: "@*",
+            group: "external",
+            position: "before",
+          },
+        ],
+        pathGroupsExcludedImportTypes: [],
+        "newlines-between": "always",
         alphabetize: {
           order: "asc",
           caseInsensitive: true,
         },
+        warnOnUnassignedImports: true,
       },
     ],
   },
@@ -74,4 +90,15 @@ module.exports = {
       },
     },
   ],
+  settings: {
+    "import/resolver": {
+      alias: {
+        map: [
+          ["@", "./src"],
+          // ["@/components", "./src/components"],
+        ],
+        extensions: [".ts", ".js", ".jsx", ".tsx", ".json", ".d.ts"],
+      },
+    },
+  },
 };
