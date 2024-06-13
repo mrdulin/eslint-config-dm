@@ -1,6 +1,6 @@
 {
   "name": "@d-matrix/eslint-config",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "ESlint Rule for Front-End Development",
   "main": "index.js",
   "scripts": {
